@@ -1,0 +1,42 @@
+I, [2015-03-13T14:35:49.562223 #44854]  INFO -- Kitchen: -----> Starting Kitchen (v1.3.1)
+E, [2015-03-13T14:35:50.022771 #44854] ERROR -- Kitchen: ------Exception-------
+E, [2015-03-13T14:35:50.022811 #44854] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2015-03-13T14:35:50.022839 #44854] ERROR -- Kitchen: Message: Could not load or activate Berkshelf (cannot load such file -- berkshelf)
+E, [2015-03-13T14:35:50.022883 #44854] ERROR -- Kitchen: ---Nested Exception---
+E, [2015-03-13T14:35:50.022923 #44854] ERROR -- Kitchen: Class: LoadError
+E, [2015-03-13T14:35:50.022946 #44854] ERROR -- Kitchen: Message: cannot load such file -- berkshelf
+E, [2015-03-13T14:35:50.022983 #44854] ERROR -- Kitchen: ------Backtrace-------
+E, [2015-03-13T14:35:50.023019 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef/berkshelf.rb:108:in `rescue in load_berkshelf!'
+E, [2015-03-13T14:35:50.023049 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef/berkshelf.rb:95:in `load_berkshelf!'
+E, [2015-03-13T14:35:50.023076 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef/berkshelf.rb:54:in `load!'
+E, [2015-03-13T14:35:50.023098 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/chef_base.rb:129:in `load_needed_dependencies!'
+E, [2015-03-13T14:35:50.023126 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/provisioner/base.rb:54:in `finalize_config!'
+E, [2015-03-13T14:35:50.023150 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:281:in `setup_provisioner'
+E, [2015-03-13T14:35:50.023174 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/instance.rb:101:in `initialize'
+E, [2015-03-13T14:35:50.023196 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:238:in `new'
+E, [2015-03-13T14:35:50.023221 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:238:in `new_instance'
+E, [2015-03-13T14:35:50.023246 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:129:in `block in build_instances'
+E, [2015-03-13T14:35:50.023271 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:128:in `map'
+E, [2015-03-13T14:35:50.023296 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:128:in `with_index'
+E, [2015-03-13T14:35:50.023321 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:128:in `build_instances'
+E, [2015-03-13T14:35:50.023350 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/config.rb:104:in `instances'
+E, [2015-03-13T14:35:50.023375 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:115:in `filtered_instances'
+E, [2015-03-13T14:35:50.023406 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/command.rb:145:in `parse_subcommand'
+E, [2015-03-13T14:35:50.023432 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/command/test.rb:43:in `block in call'
+E, [2015-03-13T14:35:50.023456 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2015-03-13T14:35:50.023498 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/command/test.rb:41:in `call'
+E, [2015-03-13T14:35:50.023534 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:56:in `perform'
+E, [2015-03-13T14:35:50.023559 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:209:in `test'
+E, [2015-03-13T14:35:50.023584 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2015-03-13T14:35:50.023612 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2015-03-13T14:35:50.023636 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/cli.rb:304:in `invoke_task'
+E, [2015-03-13T14:35:50.023661 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2015-03-13T14:35:50.023685 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2015-03-13T14:35:50.023707 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2015-03-13T14:35:50.023732 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/lib/kitchen/errors.rb:154:in `with_friendly_errors'
+E, [2015-03-13T14:35:50.023761 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/test-kitchen-1.3.1/bin/kitchen:13:in `<top (required)>'
+E, [2015-03-13T14:35:50.023783 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/bin/kitchen:23:in `load'
+E, [2015-03-13T14:35:50.023806 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/rubies/ruby-2.0.0-p451/bin/kitchen:23:in `<main>'
+E, [2015-03-13T14:35:50.023828 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/gems/ruby-2.0.0-p451/bin/ruby_executable_hooks:15:in `eval'
+E, [2015-03-13T14:35:50.023852 #44854] ERROR -- Kitchen: /Users/ss023172/.rvm/gems/ruby-2.0.0-p451/bin/ruby_executable_hooks:15:in `<main>'
+E, [2015-03-13T14:35:50.023880 #44854] ERROR -- Kitchen: ----------------------
